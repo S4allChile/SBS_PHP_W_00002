@@ -66,7 +66,7 @@ and open the template in the editor.
                 
                 $.ajax({
                         data:  dato,
-                        url:   'index.php/ajax/validaLogin',
+                        url:   '<?= base_url(); ?>index.php/ajax/validaLogin',
                         type:  'post',
                         beforeSend: function () {
                                 $('body').addClass('loading');                    
@@ -81,7 +81,7 @@ and open the template in the editor.
                                         break;
                                     
                                     case '1':
-                                        window.location.replace('index.php/ticket/escritorio');
+                                        window.location.replace('<?= base_url(); ?>index.php/ticket/escritorio');
                                         break;
                                 }
                         },

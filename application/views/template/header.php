@@ -13,7 +13,8 @@ and open the template in the editor.
         <link href="<?= base_url(); ?>vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="<?= base_url(); ?>vendors/vanadium/vanadium.css" rel="stylesheet" type="text/css"/>
         <link href="<?= base_url(); ?>vendors/css/propio.css" rel="stylesheet" type="text/css"/>
-        
+        <link href="<?= base_url(); ?>vendors/summernote/summernote.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= base_url(); ?>vendors/css/timeline.css" rel="stylesheet" type="text/css"/>
     </head>
     <div class="modal_ajax">CARGANDO....</div>
     <nav class="navbar navbar-inverse">

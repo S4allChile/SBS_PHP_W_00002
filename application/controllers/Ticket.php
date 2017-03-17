@@ -15,6 +15,8 @@ class Ticket extends CI_Controller {
     
     public function __construct() {
         parent::__construct();
+        
+        $this->load->model('ticket_DAO');
     }
     
     public function index(){
@@ -24,6 +26,9 @@ class Ticket extends CI_Controller {
     
     public function escritorio(){
         
+//        $datoEscritorio = array(
+//            'pedidos' => 
+//        );
         $this->load->view('template/header');
         $this->load->view('escritorio');
     }
@@ -31,8 +36,12 @@ class Ticket extends CI_Controller {
     public function newTicket(){
         
         $this->load->view('template/header');
-        $this->load->view('newTicket');
+        $datoTicket = array(
+            'personal' => $this->ticket_DAO->listaPersonal()
+        );
+        $this->load->view('newTicket',$datoTicket);
         
     }
+    
   
 }
